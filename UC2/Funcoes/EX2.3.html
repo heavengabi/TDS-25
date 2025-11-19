@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+function moedasTotais(moedasPequenas, moedasGrandes)
+
+{  
+    return(Number(moedasPequenas)*1) + (Number(moedasGrandes)*5)
+}
+
+
+let moedasPequenas = prompt("Quantas moedas pequenas você coletou? ")
+let moedasGrandes =prompt("Quantas moedas grandes você coletou?")
+
+let total = moedasTotais(moedasPequenas, moedasGrandes)
+
+alert ("A pontuação total é : " +total+ "pontos em moedas") 
+</script>
+</body>
+</html>

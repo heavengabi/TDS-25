@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto de Roupa</title>
+</head>
+<body>
+    <script>
+        
+        function descontoRoupa(valorOriginal) 
+        {
+            return valorOriginal * 15 / 100
+        }
+        let valorOriginal = Number(prompt("Digite o valor da roupa:"))
+        let descontoCalculo = descontoRoupa(valorOriginal)
+
+        alert(`O desconto recebido foi de R$ ${descontoCalculo} reais`)
+        
+        descontoRoupa(valorOriginal)
+    </script>
+</body>
+</html>
