@@ -23,36 +23,36 @@ public class DesafioNaruto {
 
        //escolher perso
         System.out.println("Escolha seu personagem:");
-        System.out.println("1 - Naruto (Vida 120, Dano 20)");
-        System.out.println("2 - Sasuke (Vida 100, Dano 30)");
-        System.out.println("3 - Sakura (Vida 140, Dano 18)");
+        System.out.println("1 - Gaara (Vida 140, Dano 45)");
+        System.out.println("2 - Neji (Vida 100, Dano 30)");
+        System.out.println("3 - Rock Lee (Vida 100, Dano 45)");
 
         int escolha = sc.nextInt();
 
         switch (escolha) {
             case 1:
-                vidaPlayer = 120;
-                danoJogador = 20;
-                nomePlayer = "Naruto";
+                vidaPlayer = 140;
+                danoJogador = 45;
+                nomePlayer = "Gaara";
                 break;
 
             case 2:
                 vidaPlayer = 100;
                 danoJogador = 30;
-                nomePlayer = "Sasuke";
+                nomePlayer = "Neji";
                 break;
 
             case 3:
                 vidaPlayer = 140;
-                danoJogador = 18;
-                nomePlayer = "Sakura";
+                danoJogador = 45;
+                nomePlayer = "Rock Lee";
                 break;
 
             default:
-                System.out.println("Opcao invalida! Naruto foi escolhido automaticamente.");
-                vidaPlayer = 120;
-                danoJogador = 20;
-                nomePlayer = "Naruto";
+                System.out.println("Opcao invalida! Neji foi escolhido automaticamente.");
+                vidaPlayer = 100;
+                danoJogador = 30;
+                nomePlayer = "Neji";
                 break;
         }
 
@@ -73,7 +73,7 @@ public class DesafioNaruto {
 
         while (inimigoAtual <= qntdInimigos && vidaPlayer > 0) {
 
-            int vidaInimigo = 40;
+            int vidaInimigo = 60;
             String nomeInimigo = nomesInimigos[inimigoAtual - 1];
 
             System.out.println("=== Inicio da batalha contra " + nomeInimigo + " ===");
@@ -145,4 +145,5 @@ public class DesafioNaruto {
         }
     }
 }
+
 
